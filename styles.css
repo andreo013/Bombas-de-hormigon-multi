@@ -1,0 +1,362 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #fff;
+    font-size: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #55a64d;
+    font-weight: bold;
+    margin-right: 20px; /* Ajustar el margen entre el logo y el texto */
+    flex: 1;
+}
+
+.logo span {
+    color: #55a64d;
+}
+
+/* Estilos para el menú de páginas */
+.menu-paginas {
+    background-color: #c9c9c9;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-paginas ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-paginas ul li {
+    margin-right: 20px;
+}
+
+.menu-paginas a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.menu-paginas a:hover {
+    color: #087c3e;
+}
+
+/* Estilos para el banner */
+.contenedor-galeria {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Cambia el valor según la altura deseada */
+    overflow: hidden;
+}
+
+.imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recuadro-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(18, 120, 89, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #356f30;
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+} lo comento por ahora
+
+
+
+
+
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.redes-sociales i {
+    margin-right: 5px;
+}
+
+/*agregado nuevo*/
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    background-color: #10ae4a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px auto; /* Ajusta el margen según sea necesario */
+    width: 80%; /* Ajusta el ancho del botón para dispositivos móviles */
+}
+/* Ajustes de visualización para móviles */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: auto; /* Ajusta el ancho del botón para móviles */
+        
+    }
+}
+
+/* Estilos para la página de historia */
+
+
+.historia {
+    padding:10px;
+    margin: 10px;
+    /*max-width: 35%;*/
+    /* Limita el ancho máximo del contenedor */
+    margin-left: 2%;
+    /* Ajusta el margen izquierdo para mover el texto hacia la izquierda */
+}
+
+/* Estilos para justificar el texto dentro de .historia */
+.historia {
+    padding: 10px;
+    margin: 10px;
+    text-align: left; /* Alinea el texto completamente en ambos lados */
+    text-align: justify;
+}
+
+/* Estilos para el texto dentro de .historia */
+.historia p {
+    font-size: 15px; /* Ajusta el tamaño de la fuente del texto de los productos según sea necesario */
+}
+
+
+
+
+
+
+/* Estilos para el título dentro de .historia */
+/*.historia h1 {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario 
+}*/
+
+/* Estilos para el texto dentro de .historia */
+/*.historia p {
+    font-size: 15px; /* Ajusta el tamaño de la fuente del texto de los productos según sea necesario 
+}*/
+
+
+
+
+
+
+
+/* Estilos para la página de productos */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.producto img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-producto {
+    flex: 1;
+}
+
+.info-producto h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    margin-bottom: 10px;
+}
+
+.info-producto p strong {
+    color: #256f3d;
+}
+
+/* Estilos para tamaños responsive */
+@media (max-width: 768px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 16px;
+    }
+
+    .contenedor-productos {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .menu-paginas {
+        padding: 8px;
+    }
+
+    .menu-paginas ul li {
+        margin-right: 6px;
+    }
+
+    .menu-paginas a {
+        font-size: 10px;
+        margin: 0 3px;
+    }
+}
+
+/* Estilos para la página Formulario de contacto */
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; /* Ajusta la altura para centrar verticalmente en la página */
+   
+}
+
+
+.contact-main section {
+    margin-bottom: 50px;
+}
+
+.contact-main h2 {
+    margin-top: 0;
+}
+
+
+.contact-main form {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho del formulario */
+    max-width: 600px; /* Limita el ancho máximo del formulario */
+}
+
+.contact-main label {
+    font-weight: bold;
+}
+
+.contact-main .form-group {
+    width: 100%;
+    margin-bottom: 10px; /* Agrega espacio entre los grupos de campos */
+    text-align: center; /* Centra el texto */
+}
+
+.contact-main input[type="text"],
+.contact-main input[type="email"],
+.contact-main input[type="tel"],
+.contact-main textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center; /* Centra el contenido */
+}
+
+
+.contact-main textarea {
+    resize: vertical;
+}
+
+.contact-main .form-group.buttons {
+    text-align: center; /* Centra los elementos horizontalmente */
+    margin-top: 20px; /* Agrega un espacio arriba de los botones */
+}
+
+
+
+.contact-main input[type="submit"],
+.contact-main input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #097a5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 40px; /* Agrega un espacio entre los botones */
+}
+
+.contact-main input[type="submit"]:hover,
+.contact-main input[type="reset"]:hover {
+    background-color: #1aa055;
+}
+
+
+/* Estilo para el mapa de Google */
+iframe[src*="google.com/maps/embed"] {
+    width: 100%; /* Ajustamos al ancho máximo del contenedor */
+    height: 450px; /* Altura deseada del mapa */
+    display: block; /* Aseguramos que el iframe sea mostrado como bloque */
+    margin: 0 auto; /* Centramos horizontalmente */
+    border: 0; /* Eliminamos el borde del iframe */
+}
+
+

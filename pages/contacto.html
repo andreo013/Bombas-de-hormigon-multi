@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/Isologo_Bombas_de_hormigón.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="main.js"></script>
+    <title>Bombas de hormigón - Contacto</title>
+</head>
+<body onload="obtenerValorDolar()">
+    <!-- Header -->
+    <header>
+        <div class="isologo"><img src="../Images/Isologo_Bombas_de_hormigón.png" alt="Logo de Bombas de hormigon" width="100" height="100" align="left"></div>
+        <div class="logo">Bombas <span>de hormigón</span></div>
+    </header>
+    <!-- Fin Header -->
+    <!-- Menú de páginas -->
+    <nav class="menu-paginas">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./historia.html">Historia</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Fin Menú de páginas -->
+    <h1 class="contacto-titulo"></h1>
+<main class="contact-main">
+    <section>
+        <h2>Envíanos tu consulta</h2>
+        <br>
+        <form action="https://formsubmit.co/hormigonyservicios@gmail.com" method="POST" />
+        
+        <div class="form-group">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                 </div>
+
+                 <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group consulta">
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" name="consulta" cols="30" rows="10"></textarea>
+                </div>
+
+
+                    <div class="form-group buttons"></div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+        </form>
+    </section>
+</main>
+<main>
+<section>
+    
+
+    <h2 style="margin-left: 20px;">Ubicación</h2>
+<div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.2549102074086!2d-58.569235924528876!3d-34.521769153174525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba6fe9217879%3A0x3ca054e764ec7fd4!2sEmilio%20Zola%207557%2C%20Jos%C3%A9%20Le%C3%B3n%20Su%C3%A1rez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707415232458!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="redes-sociales">
+                
+                <a href="https://www.instagram.com/bombasde_hormigon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <p id="dolar-value">Valor del dólar: <span id="dolar-amount">Cargando...</span></p>
+            <!-- Enlace a WhatsApp -->
+            <a href="https://wa.me/541130725530?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios" target="_blank" class="whatsapp-button">Chatea con nosotros en WhatsApp</a>
+            <p>Todos los derechos reservados - bombasdehormigon ©</p>
+            <p>Diseñado por AO: Andrea Ochoa</p>
+        </nav>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+</html>
